@@ -18,7 +18,7 @@ $(document).ready(function(){
       $("#places").text("");
       for (var i = 0; i <data.response.venues.length; i++){
       console.log(data);
-      $('#places').append("<p class='list'>" + data.response.venues[i].name, data.response.venues[i].location.address + "</p>");
+      $('#places').append("<p class='list'>" + data.response.venues[i].name + "<br>" + data.response.venues[i].location.address + "</p>");
         }
     });
 
